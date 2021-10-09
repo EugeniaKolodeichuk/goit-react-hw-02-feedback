@@ -37,7 +37,7 @@ export default class App extends Component {
 
     const objKey = Object.keys(this.state);
     return (
-      <>
+      <section>
         <Feedback title="Please leave feedback">
           <Options options={objKey} onLeaveFeedback={this.onLeaveFeedback} />
         </Feedback>
@@ -57,7 +57,7 @@ export default class App extends Component {
             />
           </Feedback>
         )}
-      </>
+      </section>
     );
   }
 }

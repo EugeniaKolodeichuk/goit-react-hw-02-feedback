@@ -1,10 +1,11 @@
 import React from 'react';
 import shortid from 'shortid';
 import PropTypes from 'prop-types';
+import styles from '../Options/Options.module.css';
 
 const Options = ({ options, onLeaveFeedback }) => {
   return (
-    <>
+    <div className={styles.buttonsBlock}>
       {options.map(option => (
         <button
           key={shortid.generate()}
@@ -15,7 +16,7 @@ const Options = ({ options, onLeaveFeedback }) => {
           {option}
         </button>
       ))}
-    </>
+    </div>
   );
 };
 Options.propTypes = {
